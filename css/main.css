@@ -10,9 +10,85 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   box-sizing: border-box;
-  font: normal 100%/1.3 sans-serif;
+  font: normal 100%/1.3 Georgia, serif;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+.img-flex {
+  width: 100%;
+  display: block;
+}
+
+.content {
+  background-color: #e2e2e2;
+  display: block;
+  margin-top: -1.3rem;
+  padding: 1rem;
+}
+
+h2 {
+  font-family: "Denk One", sans-serif;
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: Georgia;
+}
+
+body {
+  margin: 0;
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  h1,
+  p {
+    margin: 0 0 1.4rem;
+  }
+
+  .banner {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .content {
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    border-radius: 10px;
+  color: #fff;
+  max-width: 20em;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  h1,
+  p {
+    margin: 0 0 1.5rem;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
 }
